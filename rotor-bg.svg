@@ -4,48 +4,42 @@
   <svg x="0" y="230" width="1200" height="160" viewBox="0 0 1200 160">
     
     <style>
-      /* 폰트 크기 계산: 160px 높이에 5줄이므로, 1줄당 32px */
       .ascii-text {
         font-family: 'Menlo', 'Consolas', 'Monaco', monospace;
-        font-size: 32px; /* 32px로 증가 */
+        font-size: 32px;
         font-weight: bold;
         fill: #ffffff;
         text-anchor: middle; 
-        dominant-baseline: text-before-edge; /* 상단 기준 정렬 */
+        dominant-baseline: text-before-edge;
       }
 
+      /* CSS는 수정하지 않음 (위로 올라가는 로직 유지) */
       .film-strip {
-        /* 8단계를 0.4초 동안 이동 (속도 유지) */
         animation: scrollUp 0.4s steps(8) infinite;
       }
 
       @keyframes scrollUp {
-        from {
-          transform: translateY(0);
-        }
-        to {
-          /* 이동 거리 계산: 32px(줄높이) * 8줄(패턴길이) = 256px */
-          transform: translateY(-256px);
-        }
+        from { transform: translateY(0); }
+        to { transform: translateY(-256px); }
       }
     </style>
 
     <g class="film-strip">
       <text x="50%" y="-4" class="ascii-text">
-        <tspan x="50%" dy="0">░▒▓██▓▒░</tspan>
-        <tspan x="50%" dy="32">▒▓██▓▒░░</tspan>
-        <tspan x="50%" dy="32">▓██▓▒░░▒</tspan>
-        <tspan x="50%" dy="32">██▓▒░░▒▓</tspan>
-        <tspan x="50%" dy="32">█▓▒░░▒▓█</tspan>
-        <tspan x="50%" dy="32">▓▒░░▒▓██</tspan>
+        <tspan x="50%" dy="0">░░▒▓██▓▒</tspan>
         <tspan x="50%" dy="32">▒░░▒▓██▓</tspan>
-        <tspan x="50%" dy="32">░░▒▓██▓▒</tspan>
-        
-        <tspan x="50%" dy="32">░▒▓██▓▒░</tspan>
-        <tspan x="50%" dy="32">▒▓██▓▒░░</tspan>
-        <tspan x="50%" dy="32">▓██▓▒░░▒</tspan>
-        <tspan x="50%" dy="32">██▓▒░░▒▓</tspan>
+        <tspan x="50%" dy="32">▓▒░░▒▓██</tspan>
         <tspan x="50%" dy="32">█▓▒░░▒▓█</tspan>
+        <tspan x="50%" dy="32">██▓▒░░▒▓</tspan>
+        <tspan x="50%" dy="32">▓██▓▒░░▒</tspan>
+        <tspan x="50%" dy="32">▒▓██▓▒░░</tspan>
+        <tspan x="50%" dy="32">░▒▓██▓▒░</tspan>
+        
+        <tspan x="50%" dy="32">░░▒▓██▓▒</tspan>
+        <tspan x="50%" dy="32">▒░░▒▓██▓</tspan>
+        <tspan x="50%" dy="32">▓▒░░▒▓██</tspan>
+        <tspan x="50%" dy="32">█▓▒░░▒▓█</tspan>
+        <tspan x="50%" dy="32">██▓▒░░▒▓</tspan>
       </text>
     </g>
   </svg>
