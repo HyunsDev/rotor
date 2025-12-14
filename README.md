@@ -1,6 +1,6 @@
 # Rotor
 
-[![Rotor Preview](rotor.svg)](https://rotor.hyuns.dev)
+[![Rotor Preview](rotor-bg.svg)](https://rotor.hyuns.dev)
 
 > **Minimalist Rotating ASCII Art Animation.**
 
